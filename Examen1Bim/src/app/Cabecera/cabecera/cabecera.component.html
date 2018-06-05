@@ -6,7 +6,7 @@
   <div class="col-sm-6">
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="" value="">
+        <input matInput placeholder="" value={{nombre}}>
 
       </mat-form-field>
     </form>
@@ -17,7 +17,7 @@
   <div class="col-sm-6">
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="" value="">
+        <input matInput placeholder="" value={{versionApi}}>
       </mat-form-field>
     </form>
   </div>
@@ -27,7 +27,7 @@
   <div class="col-sm-6">
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="" value="">
+        <input matInput placeholder="" value={{fechalanzamiento}}>
       </mat-form-field>
     </form>
   </div>
@@ -37,7 +37,7 @@
   <div class="col-sm-6">
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="" value="">
+        <input matInput placeholder="" value={{pesoGB}}>
       </mat-form-field>
     </form>
   </div>
@@ -47,7 +47,7 @@
   <div class="col-sm-6">
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="" value="">
+        <input matInput placeholder="" value={{instalado}}>
       </mat-form-field>
     </form>
   </div>
@@ -65,15 +65,10 @@
   <div class="col-sm-6">
 
     <div class="button-row">
-      <button mat-button>Limpiar</button>
-
-    </div>
+      <button mat-button (click)="funcionlimpiar()">Limpiar</button>
+          </div>
   </div>
 </div>
-
-
-
-
 
 <div>
 
