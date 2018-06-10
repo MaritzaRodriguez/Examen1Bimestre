@@ -1,0 +1,25 @@
+<div id="tarjeta">
+<p-card class="card" title="Tarjeta Sistema Operativo" [style]="{width: '100%'}" style="margin-left: 20px; margin-top: 30px" *ngFor="let info of tarjeta">
+  <div >
+    <label style="font-weight: bold">Nombre:</label>
+    {{info.nombre}}
+    <br>
+    <label style="font-weight: bold">version API:</label>
+    {{info.versionApi}}
+    <br>
+    <label style="font-weight: bold">Fecha de Lanzamiento:</label>
+    {{info.fechaLanzamiento | date}}
+    <br>
+    <label style="font-weight: bold">Peso:</label>
+    {{info.pesoGB}}
+    <br>
+    <label id="labelInstalado" style="font-weight: bold">Instaladoado:</label>
+    {{cambiarBolean(info.instalado)}}
+  </div>
+</p-card>
+</div>
+
+
+
+
+

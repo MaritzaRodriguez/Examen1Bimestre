@@ -1,0 +1,50 @@
+<form [formGroup]="formDetalle" id="formDetalle" class="example-form" #detalle="ngForm" (ngSubmit)="agregarDatos(detalle)" novalidate>
+  <h3 class="first" style="margin-top: 30px">Detalle</h3>
+  <div class="ui-g ui-fluid">
+    <div class="ui-g-6 ui-md-4" style="margin-right: 10px">
+      <div class="ui-inputgroup">
+        <span class="ui-inputgroup"></span>
+        <input type="text" pInputText placeholder="PesoGB" formControlName="pesoGB">
+      </div>
+    </div>
+    <div class="ui-g-6 ui-md-4" style="margin-right: 10px">
+      <div class="ui-inputgroup">
+        <input type="text" pInputText placeholder="Version" formControlName="version">
+      </div>
+    </div>
+
+    <div class="ui-g-6 ui-md-4" style="margin-right: 10px">
+      <div class="ui-inputgroup">
+        <input type="text" pInputText placeholder="Nombre de la Aplicacion" formControlName="nombreApl">
+      </div>
+    </div>
+
+    <div class="ui-g-6 ui-md-4" style="margin-right: 10px">
+      <div class="ui-inputgroup">
+        <input type="text" pInputText placeholder="Fecha de Lanzamiento" formControlName="fechaLanzamiento">
+      </div>
+    </div>
+
+    <div class="ui-g-6 ui-md-4" style="margin-right: 10px">
+    <div class="ui-inputgroup">
+      <input type="text" pInputText placeholder="URL de descarga" formControlName="url">
+    </div>
+  </div>
+    <div class="ui-g-6 ui-md-4" style="margin-right: 10px">
+      <div class="ui-inputgroup">
+        <input type="text" pInputText placeholder="Costo" formControlName="costo">
+      </div>
+    </div>
+
+    <div class="ui-g-6 ui-md-4" style="margin-right: 10px">
+      <div class="ui-inputgroup">
+        <input type="text" pInputText placeholder="Id Sistema Operativo" formControlName="SOid">
+      </div>
+    </div>
+    <button [disabled]="formDetalle.invalid" pButton type="submit" label="Guardar" style="width: 70%"></button>
+  </div>
+</form>
+
+<button id="botonLimpiarDetalle" pButton type="button" label="Limpiar" onclick="document.getElementById('formDetalle').reset()" mat-button style="width: 70%; margin: 10px 0px"></button>
+
+
